@@ -42,13 +42,22 @@
             text-align: center;
             font-size: 2.4em;
             margin-top: 0;
-            margin-bottom: 0.8em;
+            margin-bottom: 0em;
             padding-bottom: 0.5em;
             border-bottom: 3px solid;
             border-image: linear-gradient(to right, var(--sc-blue), var(--sc-red)) 1;
         }
         
         h1 .fa-tablet-screen-button { color: var(--sc-blue); }
+
+        .version-number {
+            text-align: center;
+            font-size: 1rem;
+            color: #777;
+            margin-top: 5px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
 
         h2 {
             font-size: 1.8em;
@@ -119,7 +128,7 @@
             border-radius: 8px;
             page-break-inside: avoid;
         }
-        .tip-box .fa-lightbulb, .tip-box .fa-triangle-exclamation { color: var(--sc-yellow); margin-right: 10px; }
+        .tip-box .fa-lightbulb, .tip-box .fa-triangle-exclamation, .tip-box .fa-person-biking { color: var(--sc-yellow); margin-right: 10px; }
         .tip-box p { margin: 0; }
 
         .mock-ui {
@@ -171,6 +180,7 @@
 
     <div class="container">
         <h1><i class="fa-solid fa-tablet-screen-button"></i> Guide utilisation Briefing Fdf</h1>
+        <p class="version-number">v1.0</p>
         
         <div class="info-box">
             <p><i class="fa-solid fa-link"></i> La page de briefing est accessible à cette adresse :<br>
@@ -181,6 +191,7 @@
             <h2><i class="fa-solid fa-book-open"></i> 1. Prise en Main & Conseils</h2>
             <ul>
                 <li>Pour un confort optimal, utilisez votre iPad en <strong>mode paysage</strong>.</li>
+                <li>Le site est optimisé pour une utilisation avec <strong>Safari</strong>, le navigateur par défaut de l'iPad.</li>
                 <li>Pour un accès rapide, touchez le bouton <strong>Partager</strong> <i class="fa-solid fa-arrow-up-from-bracket"></i> dans Safari, puis <strong>"Sur l'écran d'accueil"</strong>.</li>
             </ul>
              <h3><i class="fa-solid fa-floppy-disk" style="color:var(--sc-blue);"></i> Gestion de la Session</h3>
@@ -213,7 +224,7 @@
                  <li><strong>Modifier un point :</strong> Une fois en mode édition, touchez un point sur la carte pour changer son nom ou le supprimer.</li>
              </ul>
              <div class="tip-box">
-                <p><i class="fa-solid fa-triangle-exclamation"></i>L'intelligence artificielle qui place les villes sur la carte peut parfois se tromper. Si vous constatez une erreur, <strong>signale-la-moi</strong> en me donnant le nom exact de la ville concernée.</p>
+                <p><i class="fa-solid fa-triangle-exclamation"></i>L'intelligence artificielle qui place les villes sur la carte peut parfois se tromper. Si vous constatez une erreur, <strong>signalez-la-moi</strong> en me donnant le nom exact de la ville concernée.</p>
             </div>
 
             <h3><i class="fa-solid fa-plane-circle-exclamation" style="color:var(--sc-blue);"></i> C. NOTAMs et Météo : L'Analyse Intelligente</h3>
@@ -241,17 +252,23 @@
                     <div class="mock-notam-item checked">
                         <i class="fa-solid fa-square-check"></i>
                         <div>
-                            <p class="validity">VALIDE DU 23/07 AU 29/07</p>
-                            <p>Q) LFMM/QOBCE/IV/M/...<br>
-                            E) GRUE A FLECHE RELEVABLE <mark>HGT 85M</mark> PSN 434524N 0042407E.</p>
+                            <p class="validity">VALIDE DU 30/06 AU 31/08</p>
+                            <p>Q)LFMM/QACAH/IV/BO/AE/000/025/4345N00425E013 B2863/25<br>
+                            E)'NIMES GARONS' CTR HOURS OF OPS :<br>
+                            .14-16 JUN : 0500-2100<br>
+                            .17-20 JUN : 0600-2100<br>
+                            .21-30 JUN : 0500-2100<br>
+                            .01-04 JUL : 0600-2100<br>
+                            .05-31 JUL : 0500-2100<br>
+                            .01-31 AUG : 0500-2030</p>
                         </div>
                     </div>
                     <div class="mock-notam-item">
                         <i class="fa-regular fa-square"></i>
                         <div>
-                            <p class="validity">VALIDE DU 15/07 AU PERMANENT</p>
-                            <p>Q) LFMM/QFAXX/IV/NBO/...<br>
-                            E) PRUDENCE AVIONS LEGERS : RISQUE DE DEPORT A DROITE...</p>
+                            <p class="validity">VALIDE DU 20/05 AU 19/08</p>
+                            <p>Q)LFMM/QMXLC/IV/BO/A/000/999/4345N00425E005 B2145/25<br>
+                            E)TWY CC CLSD</p>
                         </div>
                     </div>
                     <div class="mock-button-bar">
@@ -269,12 +286,15 @@
                 <li><i class="fa-solid fa-list-ol"></i><strong>Synthétiser :</strong> Touchez <span class="button-style blue">Garder la sélection</span> pour n'afficher que les éléments cochés.</li>
                 <li><i class="fa-solid fa-file-export"></i><strong>Exporter :</strong> Touchez <span class="button-style purple">Sauvegarder en PDF</span> pour générer un document propre de votre synthèse.</li>
             </ul>
+             <div class="tip-box">
+                <p><i class="fa-solid fa-person-biking" style="color:var(--sc-blue);"></i><strong>Tour de France :</strong> Notez que la page surveille les activités liées au Tour. Si un SUP AIP est en vigueur pour une étape, un bouton d'accès direct apparaîtra automatiquement au bas de la carte d'étape.</p>
+            </div>
         </section>
 
         <section id="conclusion">
             <h2><i class="fa-solid fa-comments"></i> 3. Retours & Améliorations</h2>
             <div class="tip-box" style="border-left-color: var(--info-icon); background-color: var(--info-bg); border-color: var(--info-border);">
-                <p><i class="fa-solid fa-bullhorn" style="color:var(--info-icon);"></i>Pour toute remarque, demande d'amélioration ou rapport de bug, merci de les notifier dans le dossier partagé <strong>"Retour problèmes Bfg"</strong> de l'application <strong>"Notes"</strong> (iCloud).</p>
+                <p><i class="fa-solid fa-bullhorn" style="color:var(--info-icon);"></i>Pour toute remarque, demande d'amélioration ou rapport de bug, vous pouvez utiliser le dossier partagé <strong>"Retour problèmes Bfg"</strong> de l'application <strong>"Notes"</strong> (iCloud), ou me contacter directement par <strong>WhatsApp</strong>.</p>
                 <p style="margin-top:10px;">Pensez à bien noter votre <strong>trigramme</strong> à côté de votre remarque pour que je puisse vous recontacter si besoin de plus d'informations.</p>
             </div>
         </section>
